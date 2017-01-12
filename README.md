@@ -2,7 +2,8 @@
 GPS Tracker Activity for UNSW CSE ACCESS
 
 Setup instructions:
-1. Clone the git repository to a CGI directory (e.g. `cgi-bin` or `public_html`)
+
+1. Clone the git repository to a CGI directory (e.g. `cgi-bin` or `public_html`).
 2. Run `init.sh`
 
 Usage:
