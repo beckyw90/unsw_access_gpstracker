@@ -25,14 +25,14 @@ def insert(lat, lng):
     
 
 def main():
-    print(HEADER)
+    print(HEADER, file=web_cgi)
     cgitb.enable()
     try:
         forms = cgi.FieldStorage()
         lat = float(forms.getvalue('lat'))
         lng = float(forms.getvalue('lng'))
         insert(lat, lng)
-        print(HEADER)
+        print(HEADER, file=web_cgi)
     except Exception as e:
         print(HEADER_ERR, file=web_cgi)
 
