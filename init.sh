@@ -1,4 +1,4 @@
-chmod o+rw .
+chmod 755 .
 #chmod a+rw *
 python3.5 query.py > /dev/null
 chmod a+rw activity.sqlite3 index.html
