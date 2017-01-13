@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3.5
 # Add gps coordinates to website
 # Usage: add.py?lat=-324.2343&lng=133.324324
 import sys, codecs, cgi, cgitb, sqlite3, datetime

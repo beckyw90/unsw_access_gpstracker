@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3.5
 import sys, codecs, cgi, cgitb, sqlite3
 web_cgi = codecs.getwriter('utf-8')(sys.stdout.buffer)
 
