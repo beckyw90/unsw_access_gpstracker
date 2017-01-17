@@ -32,7 +32,6 @@ def main():
         lat = float(forms.getvalue('lat'))
         lng = float(forms.getvalue('lng'))
         insert(lat, lng)
-        print(HEADER, file=web_cgi)
     except Exception as e:
         print(HEADER_ERR, file=web_cgi)
 
