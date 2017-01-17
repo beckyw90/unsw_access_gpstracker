@@ -31,7 +31,11 @@ def main():
         forms = cgi.FieldStorage()
         lat = float(forms.getvalue('lat'))
         lng = float(forms.getvalue('lng'))
-        insert(lat, lng)
+        if lat == 0 and lng == 0:
+            print("Status: 400 Bad Request\n\nInvalid coordinates", file=web_cgi)
+            pass
+        else:
+            insert(lat, lng)
     except Exception as e:
         print(HEADER_ERR, file=web_cgi)
 
