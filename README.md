@@ -7,5 +7,6 @@ Setup instructions:
 2. Run `init.sh`
 
 Usage:
-* add GPS coordinates by sending a HTTP POST request to `add.py?lat=<latitude coords>&lng=<longitude coords>`. The script will respond with a `Added` message if the coordinates are registered successfully.
+* add GPS coordinates by sending a HTTP POST request to `add.py?lat=<latitude coords>&lng=<longitude coords>`. The script will respond with a `Added` message if the coordinates are registered successfully. Note that (0, 0) will not count as a valid coordinate.
 * load `index.html` on a web browser on your computer. Your coordinates will appear on a Google Maps embedded window. The website will automatically update with new coordinates every 15 seconds.
+* send a HTTP request to `clear.py` to unregister all your co-ordinates.
