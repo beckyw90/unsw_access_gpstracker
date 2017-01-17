@@ -74,12 +74,14 @@ function load_updates() {
     // Initialise the request object
     let request = new XMLHttpRequest();
 
-    // This particular URL will query for the list of saved locations
-    // that has been collected by the Particle Photon
+    ////////////////////////////////////////////////////////////////////////
+    // Tweak this line!
     //
-    // NOTE: the timeLastLoaded is now sent in the query too
-    // as it will be used to get new GPS locations only
-    request.open("GET", "query.py?t=" + timeLastLoaded.toString(), true);
+    // This currently gets all the GPS locations
+    // but we want to only get any new GPS locations recorded by the GPS
+    // tracker. We will need to use the timeLastLoaded here
+    request.open("GET", "query.py", true);
+    ////////////////////////////////////////////////////////////////////////
 
     // Similar to the above, when the query request has successfully
     // returned a response
